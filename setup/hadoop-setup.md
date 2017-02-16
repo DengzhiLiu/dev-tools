@@ -1,3 +1,4 @@
+```
 安装基本应用
 yum install svn   ncurses-devel   gcc* lzo-devel zlib-devel autoconf    automake    libtool    cmake    openssl –devel
 安装jdk环境
@@ -306,4 +307,4 @@ hadoop fs -mkdir /user
 hadoop fs -mkdir /user/history
 hadoop fs -mkdir /user/history/done
 hadoop fs -chown -R hdfs.hdfs /user/
- 
+``` 

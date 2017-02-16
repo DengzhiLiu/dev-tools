@@ -1,3 +1,4 @@
+```
 一、查看机器是否有安装docker
        docker -v
 二、安装docker
@@ -46,5 +47,5 @@
       在docker容器里面更新包之后可以把容器更新成一个新的镜像
 十三　以命令交互的方式运行docker
 　　　　　　　　docker exec -ti $(container name) /bin/bash
-
+```
 
