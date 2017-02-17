@@ -23,6 +23,8 @@
         -d:  以后台的方式运行
         -p: 指定IP映射
        -v : 指定data目录
+       -h : hostname, 主机名
+       -name: docker name
      注意： 自己配置时要到名字和主机中的banyandb替换掉
 七、启动SSH
        docker exec 8429f07418c8 /etc/init.d/sshd start
