@@ -1,4 +1,4 @@
-#   tensorflow 源码安装:
+#   tensorflow CentOS6 源码安装(若为较新的操作系统，则可以直接通过官方包安装):
      
 ##  一.  安装所有必备工具:
     wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
@@ -49,11 +49,9 @@
      $ bazel-bin/tensorflow/cc/tutorials_example_trainer --use_gpu
     大量的输出信息. 这个例子用 GPU 迭代计算一个 2x2 矩阵的主特征值 (major eigenvalue).
     最后几行输出和下面的信息类似.
-    ```
      000009/000005 lambda = 2.000000 x = [0.894427 -0.447214] y = [1.788854 -0.894427]
      000006/000001 lambda = 2.000000 x = [0.894427 -0.447214] y = [1.788854 -0.894427]
      000009/000009 lambda = 2.000000 x = [0.894427 -0.447214] y = [1.788854 -0.894427]
-     ```
      注意, GPU 支持需通过编译选项 "--config=cuda" 开启.
      已知问题
      尽管可以在同一个源码树下编译开启 Cuda 支持和禁用 Cuda 支持的版本, 我们还是推荐在 在切换这两种不同的编译配置时, 使用 "bazel clean" 清理环境.
