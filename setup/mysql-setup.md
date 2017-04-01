@@ -210,6 +210,10 @@ transaction-isolation = READ-COMMITTED                   ####数据库隔离级�
 启动mysql: mysqld_safe  --defaults-file=/etc/my.cnf --user=mysql  &
 连接mysql客户端: mysql -uroot -p'pass' -hlocalhost
 
+# 增加远程登陆用户
+GRANT USAGE ON *.* TO 'username'@'%' IDENTIFIED BY 'passwd' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'username'@'%' IDENTIFIED BY 'passwd' WITH GRANT OPTION;
+flush privileges;
 
 ```
 
