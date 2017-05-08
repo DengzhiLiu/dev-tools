@@ -53,6 +53,7 @@ make install
 cd /usr/local/mysql/scripts
 chmod 755 mysql_install_db
 mysql_install_db --user=mysql --basedir=/usr/local/mysql/   --datadir=/data/mysql/data --defaults-file=/etc/my.cnf
+install_db 前要在/data/mysql目录下建好arch data logs tmp目录
 
 生成mysql配置文件
 cp /usr/local/mysql/support-files/my-default.cnf /etc/my.cnf
